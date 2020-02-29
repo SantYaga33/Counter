@@ -1,0 +1,42 @@
+.screen {
+    width: 100%;
+    height: 60%;
+    background: #3e3ec1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    
+
+    /*border: 1px solid #fff;*/
+}
+
+.screen_text {
+    width: 30%;
+    font-size: 40px;
+    font-weight: 700;
+    color: #19194d;
+    display: flex;
+    justify-content: center;
+
+    /*border: 1px solid #fff;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

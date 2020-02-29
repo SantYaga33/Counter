@@ -1,0 +1,34 @@
+.buttons {
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+    /*border: 1px solid #fff;*/
+}
+.button_wrap {
+    /*background: #fff;*/
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    width: 40%;
+    padding: 10px;
+    background-color: #3e3ec1;
+    border: none;
+    outline: none;
+}
+
+
+
+
+
+
+
+
