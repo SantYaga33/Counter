@@ -7,18 +7,17 @@ const Buttons = (props) => {
 	const analyzeBtnStatus = (e) => {
 		let target = e.currentTarget;
 
-		if(target.getAttribute('id') === '1' ){
-			props.addCount();
-		} else if(target.getAttribute('id') === '2' ){
-			props.reset();
+		if ( target.getAttribute ('id') === '1' ) {
+			props.addCount ();
+		} else if ( target.getAttribute ('id') === '2' ) {
+			props.reset ();
 
 		}
 	};
 
-	const buttonsList = props.state.buttons.map (el => <CreatButton key={el['id']} {...el}
-																	onClick={analyzeBtnStatus}
-																	className={styles[[el]['activeClassBtn']]}/>);
-
+	const buttonsList = props.state.buttons.map ((el, index) => index !== 2 ?
+		<CreatButton key={el.id} {...el} onClick={analyzeBtnStatus}
+					 className={styles[el.activeClassBtn]}/> : false);
 
 	return (
 		<div className={styles.buttons}>

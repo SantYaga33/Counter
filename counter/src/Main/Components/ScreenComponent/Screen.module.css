@@ -6,22 +6,45 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    
-
-    /*border: 1px solid #fff;*/
 }
 
 .screen_text {
+    width: 90%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #19194d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen_green {
     width: 30%;
-    font-size: 40px;
+    font-size: 70px;
     font-weight: 700;
     color: #19194d;
     display: flex;
     justify-content: center;
-
-    /*border: 1px solid #fff;*/
 }
 
+.screen_red {
+    width: 30%;
+    font-size: 76px;
+    font-weight: 700;
+    color: #cc3300;
+    display: flex;
+    justify-content: center;
+}
+
+.screen_error {
+    width: 90%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #cc3300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
