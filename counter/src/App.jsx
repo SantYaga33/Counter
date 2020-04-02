@@ -30,6 +30,44 @@ class App extends React.Component {
 
 	};
 
+
+	componentDidMount() {
+		this.restoreState();
+	};
+
+	saveState = () => {
+		let stateAsString = JSON.stringify(this.state);
+		localStorage.setItem('our-state', stateAsString);
+	};
+
+	restoreState = () => {
+		let state= {
+
+			startCountValue: 0,
+			maxCountValue: 0,
+			startCountStore: 0,
+			maxCountStore: 0,
+			screenTitle: 'input value and press "Set"',
+			countColor: 'text', // 'red' 'green' 'error'
+			inputError: false,
+			buttons: [
+				{ id: 1, title: 'Inc', buttonStatus: true, activeClassBtn: 'button_green' },
+				{ id: 2, title: 'Reset', buttonStatus: true, activeClassBtn: 'button_red' },
+				{ id: 3, title: 'Set', buttonStatus: true, activeClassBtn: 'button_green' },
+			],
+			inputs: [
+				{ id: 1, activeClassInp: '', },
+				{ id: 2, activeClassInp: '', },
+			]
+		};
+		let stateAsString = localStorage.getItem('our-state');
+		if (stateAsString !==null) {
+			state = JSON.parse(stateAsString);
+		}
+		this.setState(state);
+	};
+
+
 	addCount = () => {
 		if ( this.state.startCountValue < this.state.maxCountValue ) {
 			this.setState ({

@@ -8,7 +8,7 @@
 }
 
 .discr_wrap {
-    width: 30%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -21,7 +21,7 @@
 }
 
 .input_wrap {
-    width: 70%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -29,9 +29,11 @@
 }
 
 input {
-    padding: 10px;
     text-align: center;
     border: 1px solid #19194d;
+    padding: 5px 2px;
+    font-size: 18px;
+    font-weight: 700;
 }
 .input_red {
     background-color: red;

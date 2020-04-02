@@ -20,21 +20,21 @@
     transition: .2s ease-in-out;
 }
 
-.main_container:before {
-    content: "";
-    background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
-    height: 700px;
-    width: 50px;
-    position: absolute;
-    top: -8px;
-    left: -500px;
-    transform: skewX(-45deg);
-}
+/*.main_container:before {*/
+/*    content: "";*/
+/*    background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));*/
+/*    height: 700px;*/
+/*    width: 50px;*/
+/*    position: absolute;*/
+/*    top: -8px;*/
+/*    left: -500px;*/
+/*    transform: skewX(-45deg);*/
+/*}*/
 
-.main_container:hover {
-    background: #19194d;
-    color: #fff;
-}
+/*.main_container:hover {*/
+/*    background: #19194d;*/
+/*    color: #fff;*/
+/*}*/
 
 .main_container:hover:before {
     left: 750px;
